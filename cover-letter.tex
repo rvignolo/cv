@@ -1,0 +1,136 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% Based on Awesome CV LaTeX Template for Cover Letter
+% from Claud D. Park <posquit0.bj@gmail.com>
+% Downloaded from: https://github.com/posquit0/Awesome-CV
+%
+% Author: Ramiro Vignolo
+% https://github.com/rvignolo/cv
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{templates/awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-nephritis}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{profile}
+\name{Ramiro}{Vignolo}
+\position{Lead Quantitative Analyst \& Developer{\enskip\cdotp\enskip}Nuclear Engineer}
+\address{CRISIL, Av. Del Libertador 174, Vicente López, Buenos Aires, Argentina}
+
+\mobile{(+54) 9 11 6482-4868}
+\email{ramirovignolo@gmail.com}
+% \homepage{page-url}
+\github{rvignolo}
+\linkedin{rvignolo}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Microsoft Research}
+%   {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+  {Company Recruitment Team}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Research Software Engineer}
+% How the letter is opened
+% \letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+\lfooter{\today}
+\cfooter{R. Vignolo~~~·~~~Cover Letter}
+\rfooter{\thepage/\pageref{LastPage}}
+% Leave any of these blank if they are not needed
+\makecvfooter
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a Nuclear Engineer with vast experience in mathematical modeling, numerical simulation and programming applied in both open source and proprietary software for solving scientific problems in a wide variety of domains, such as nuclear \& reactor physics, heat transfer, and finance. I really enjoy having new challenges, no matter the scientific domain: I have passion for teaching and learning.
+
+\lettersection{Why Me?}
+Even though I have not pursued a Ph.D. degree, I have been working in the research domain for many years, focusing on application and delivery. Most of the work that I have done in the industry required lots of research, development, and implementation. Also, I am always learning new technologies as well as perfecting my capabilities. I feel like Research Software Engineer is the position of my dreams, that I have been preparing for this my whole life and, this opportunity is not too usual in my country of residence.
+
+\lettersection{Why Microsoft?}
+I believe that the job description was ideal and fits everything I have always wanted for a job. Then, having Microsoft as the employer is a huge plus!
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
